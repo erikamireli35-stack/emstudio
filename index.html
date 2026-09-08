@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>EM Studio — Sites Profissionais que Transformam Presença Digital em Clientes</title>
+<meta name="description" content="A EM Studio cria sites profissionais, modernos e personalizados para empresas que querem uma presença digital à altura do seu negócio. Sites institucionais, landing pages e experiências digitais a partir de R$700.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emstudio.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EM Studio">
+<meta property="og:title" content="EM Studio — Sites que fazem sua marca ser percebida">
+<meta property="og:description" content="Criação de sites profissionais, modernos e personalizados para empresas que querem uma presença digital à altura do seu negócio. A partir de R$700.">
+<meta property="og:image" content="https://emstudio.com.br/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://emstudio.com.br/">
+<meta property="og:locale" content="pt_BR">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EM Studio — Sites que fazem sua marca ser percebida">
+<meta name="twitter:description" content="Criação de sites profissionais, modernos e personalizados para empresas que querem uma presença digital à altura do seu negócio.">
+<meta name="twitter:image" content="https://emstudio.com.br/assets/og-image.jpg">
+
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://emstudio.com.br/#organization",
+      "name": "EM Studio",
+      "url": "https://emstudio.com.br/",
+      "logo": "https://emstudio.com.br/assets/logo.png",
+      "image": "https://emstudio.com.br/assets/og-image.jpg",
+      "description": "Estúdio especializado na criação de sites profissionais, com foco em design, performance e resultados.",
+      "telephone": "+5521977383689",
+      "sameAs": ["https://www.instagram.com/em_studio__sites_premium"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://emstudio.com.br/#website",
+      "url": "https://emstudio.com.br/",
+      "name": "EM Studio",
+      "publisher": { "@id": "https://emstudio.com.br/#organization" },
+      "inLanguage": "pt-BR"
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Criação de sites profissionais",
+      "provider": { "@id": "https://emstudio.com.br/#organization" },
+      "areaServed": "BR",
+      "description": "Sites institucionais, landing pages e experiências digitais personalizadas para negócios que querem uma presença digital profissional.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "BRL",
+        "price": "700",
+        "description": "Projeto de site institucional ou landing page, a partir de R$700."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --black:#121110;
+  --panel:#1c1a16;
+  --panel-2:#221f1a;
+  --line: rgba(240,235,222,.16);
+  --line-soft: rgba(240,235,222,.09);
+  --ink:#f5f0e5;
+  --ink-dim:#c9c2b2;
+  --stone:#b3ab99;
+  --gold:#d4b378;
+  --gold-dim:#c0a170;
+  --serif:'Bodoni Moda', Georgia, serif;
+  --sans:'Space Grotesk', -apple-system, sans-serif;
+  --max:1320px;
+  --gutter:clamp(20px, 5vw, 96px);
+  --ease:cubic-bezier(.16,.84,.32,1);
+  --radius:14px;
+}
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  background:var(--black); color:var(--ink); font-family:var(--sans); font-weight:400;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden; min-width:320px;
+}
+@media (prefers-reduced-motion:reduce){ *{ animation-duration:.01ms !important; transition-duration:.01ms !important; } html{scroll-behavior:auto;} }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font-family:inherit; }
+.wrap{ max-width:var(--max); margin:0 auto; padding:0 var(--gutter); }
+::selection{ background:var(--gold); color:var(--black); }
+:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+
+h1,h2,h3{ font-family:var(--serif); font-weight:500; letter-spacing:-.01em; }
+.eyebrow{ font-family:var(--sans); font-size:11px; letter-spacing:.22em; text-transform:uppercase; color:var(--stone); font-weight:500; }
+.lede{ color:var(--ink-dim); font-size:clamp(15px,1.6vw,17px); line-height:1.75; font-weight:400; }
+.rule{ display:inline-block; width:28px; height:1px; background:var(--gold-dim); vertical-align:middle; margin-right:10px; }
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex; align-items:center; gap:10px; font-family:var(--sans); font-size:13px;
+  letter-spacing:.04em; font-weight:500; padding:15px 26px; white-space:nowrap; border:1px solid transparent;
+  border-radius:999px; cursor:pointer;
+}
+.btn-solid{ background:var(--ink); color:var(--black); }
+.btn-solid:hover{ background:var(--gold); }
+.btn-line{ border-color:var(--line); color:var(--ink-dim); background:transparent; }
+.btn-line:hover{ border-color:var(--ink-dim); color:var(--ink); }
+.btn .arrow{ transition:transform .35s var(--ease); }
+.btn:hover .arrow{ transform:translateX(4px); }
+.btn:active{ transform:scale(.97); }
+
+/* ============ HEADER / NAV ============ */
+.nav{
+  position:fixed; inset:0 0 auto 0; z-index:100; display:flex; align-items:center; justify-content:space-between;
+  padding:20px var(--gutter); transition:border-color .4s var(--ease);
+  border-bottom:1px solid transparent;
+  background:linear-gradient(180deg, rgba(18,17,16,.7) 0%, rgba(18,17,16,.3) 70%, transparent 100%);
+}
+.nav::before{
+  content:''; position:absolute; inset:0; z-index:-1;
+  background:rgba(18,17,16,.86); backdrop-filter:blur(10px);
+  opacity:0; transition:opacity .4s var(--ease);
+}
+.nav.scrolled{ border-color:var(--line); }
+.nav.scrolled::before{ opacity:1; }
+
+.brand{ display:flex; align-items:center; gap:10px; position:relative; z-index:101; }
+.brand img{ height:34px; width:auto; }
+.brand .brand-text{ display:flex; flex-direction:column; line-height:1.1; }
+.brand .brand-text b{ font-family:var(--serif); font-size:15px; font-weight:500; letter-spacing:.02em; color:var(--ink); }
+.brand .brand-text span{ font-size:8.5px; letter-spacing:.24em; color:var(--stone); text-transform:uppercase; }
+
+.nav-links{ display:flex; align-items:center; gap:36px; }
+.nav-links a{ font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-dim); transition:color .3s; }
+.nav-links a:hover{ color:var(--ink); }
+.nav-links a.mob-cta{ display:none; }
+.nav-cta{ margin-left:36px; }
+
+.burger{ display:none; width:26px; height:16px; position:relative; background:none; border:none; cursor:pointer; z-index:101; }
+.burger span{ position:absolute; left:0; right:0; height:1px; background:var(--ink); transition:transform .35s var(--ease), opacity .3s var(--ease), top .35s var(--ease); }
+.burger span:nth-child(1){ top:0; } .burger span:nth-child(2){ top:7px; } .burger span:nth-child(3){ top:14px; }
+.burger.is-open span:nth-child(1){ top:7px; transform:rotate(45deg); }
+.burger.is-open span:nth-child(2){ opacity:0; }
+.burger.is-open span:nth-child(3){ top:7px; transform:rotate(-45deg); }
+
+@media (max-width:860px){
+  .nav-links{
+    position:fixed; inset:0; z-index:99; background:var(--black);
+    flex-direction:column; align-items:flex-start; justify-content:center; gap:22px;
+    padding:0 var(--gutter);
+    transform:translateY(-100%); transition:transform .5s var(--ease);
+  }
+  .nav-links.open{ transform:translateY(0); }
+  .nav-links a{ font-family:var(--serif); font-size:30px; text-transform:none; letter-spacing:0; color:var(--ink); }
+  .nav-links a.mob-cta{
+    display:inline-flex; margin-top:6px; font-family:var(--sans); font-size:13px; letter-spacing:.05em;
+    text-transform:none; color:var(--black);
+  }
+  .nav-cta{ display:none; }
+  .burger{ display:block; }
+}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative; padding:clamp(110px,16vw,168px) 0 clamp(60px,8vw,100px);
+  background:
+    radial-gradient(ellipse 55% 60% at 82% 40%, rgba(212,179,120,.09), transparent 65%),
+    var(--black);
+  overflow:hidden;
+}
+.hero::before{
+  content:''; position:absolute; inset:0; pointer-events:none; opacity:.4;
+  background-image: radial-gradient(rgba(240,235,222,.05) 1px, transparent 1px);
+  background-size:26px 26px;
+  mask-image:radial-gradient(ellipse 70% 60% at 75% 35%, black, transparent 70%);
+}
+.hero-grid{
+  position:relative; z-index:2; display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(32px,6vw,64px); align-items:center;
+}
+.hero-copy h1{
+  font-size:clamp(38px,5.4vw,64px); line-height:1.06; color:var(--ink); margin-top:18px; max-width:13ch;
+}
+.hero-copy .lede{ margin-top:24px; max-width:46ch; }
+.hero-price{ display:flex; align-items:baseline; gap:8px; margin-top:30px; }
+.hero-price .label{ font-size:13px; color:var(--stone); }
+.hero-price .amount{ font-family:var(--serif); font-size:clamp(24px,2.6vw,30px); color:var(--ink); }
+.hero-price .amount b{ font-weight:500; color:var(--gold); }
+.hero-cta{ display:flex; gap:16px; margin-top:32px; flex-wrap:wrap; }
+
+.hero-visual{ position:relative; }
+.hero-visual .frame{
+  position:relative; border-radius:var(--radius); overflow:hidden;
+  box-shadow:0 60px 100px -40px rgba(0,0,0,.7), 0 0 0 1px rgba(240,235,222,.08);
+}
+.hero-visual img{ width:100%; height:auto; display:block; }
+.hero-visual .glow{
+  position:absolute; z-index:-1; inset:-10%; background:radial-gradient(ellipse 60% 60% at 60% 50%, rgba(212,179,120,.16), transparent 70%);
+  filter:blur(20px);
+}
+
+@media (max-width:900px){
+  .hero-grid{ grid-template-columns:1fr; }
+  .hero-copy h1{ max-width:16ch; }
+}
+
+/* hero load animation */
+@keyframes rise{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:none; } }
+.hero-copy > *, .hero-visual{ animation:rise .9s var(--ease) both; }
+.hero-copy h1{ animation-delay:.06s; }
+.hero-copy .lede{ animation-delay:.16s; }
+.hero-price{ animation-delay:.24s; }
+.hero-cta{ animation-delay:.32s; }
+.hero-visual{ animation-delay:.4s; }
+@media (prefers-reduced-motion:reduce){ .hero-copy > *, .hero-visual{ animation:none; } }
+
+/* ============ SECTION RHYTHM ============ */
+section{ position:relative; }
+.section-pad{ padding:clamp(70px,9vw,130px) 0; }
+.divider{ border-top:1px solid var(--line); }
+.section-head{ display:grid; grid-template-columns:1.3fr .7fr; gap:40px; align-items:end; margin-bottom:clamp(44px,6vw,72px); }
+.section-head h2{ font-size:clamp(30px,3.8vw,46px); color:var(--ink); margin-top:12px; max-width:15ch; }
+.section-head .lede{ margin-left:auto; text-align:right; max-width:32ch; }
+@media (max-width:760px){
+  .section-head{ grid-template-columns:1fr; gap:16px; }
+  .section-head .lede{ margin-left:0; text-align:left; }
+}
+
+/* ============ PROJETOS ============ */
+.proj-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.proj-card{ display:flex; flex-direction:column; }
+.proj-card .shot{
+  position:relative; border-radius:var(--radius); overflow:hidden; background:var(--panel);
+  border:1px solid var(--line); display:block;
+}
+.proj-card .shot img{
+  width:100%; height:auto; display:block;
+  filter:grayscale(15%) brightness(.92) contrast(1.02);
+  transition:filter .5s var(--ease), transform .6s var(--ease);
+}
+.proj-card:hover .shot img{ filter:grayscale(0%) brightness(1) contrast(1.02); transform:scale(1.04); }
+.proj-card .meta{ margin-top:18px; }
+.proj-card .num{ font-family:var(--serif); font-style:italic; color:var(--gold-dim); font-size:13px; }
+.proj-card h3{ font-size:19px; color:var(--ink); font-weight:400; margin-top:6px; }
+.proj-card p{ margin-top:8px; color:var(--stone); font-size:13.5px; line-height:1.6; }
+.proj-card .visit{
+  display:inline-flex; align-items:center; gap:8px; margin-top:14px; font-size:12px; letter-spacing:.03em; color:var(--ink-dim);
+  transition:color .3s var(--ease), gap .3s var(--ease);
+}
+.proj-card:hover .visit{ color:var(--gold); gap:11px; }
+
+@media (max-width:980px){ .proj-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .proj-grid{ grid-template-columns:1fr; gap:32px; } }
+
+/* ============ SOBRE ============ */
+.split{ display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(36px,6vw,80px); align-items:center; }
+.split.reverse{ grid-template-columns:1.15fr .85fr; }
+.split.reverse .split-media{ order:2; }
+.split-media{ border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); }
+.split-media img{ width:100%; height:auto; display:block; }
+.split-copy h2{ font-size:clamp(28px,3.4vw,40px); margin-top:14px; max-width:14ch; }
+.split-copy .lede{ margin-top:22px; max-width:52ch; }
+.split-copy .lede strong{ color:var(--ink); font-weight:500; }
+.split-copy .closing{ margin-top:24px; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--gold-dim); }
+@media (max-width:860px){
+  .split, .split.reverse{ grid-template-columns:1fr; }
+  .split.reverse .split-media{ order:0; }
+}
+
+/* ============ INVESTIMENTO band ============ */
+.invest{ background:var(--panel); padding:clamp(56px,7vw,86px) 0; }
+.invest .wrap{ display:flex; justify-content:space-between; align-items:center; gap:40px; flex-wrap:wrap; }
+.invest h2{ font-size:clamp(26px,3vw,34px); margin-top:10px; }
+.invest .lede{ margin-top:10px; }
+.invest-price{ display:flex; align-items:center; gap:32px; flex-wrap:wrap; }
+.invest-price .amount-block .label{ font-size:12px; color:var(--stone); letter-spacing:.05em; }
+.invest-price .amount-block .amount{ font-family:var(--serif); font-size:clamp(34px,4vw,44px); color:var(--ink); margin-top:4px; }
+.invest-price .amount-block .amount b{ color:var(--gold); font-weight:500; }
+.invest-divider{ width:1px; align-self:stretch; background:var(--line); }
+@media (max-width:760px){
+  .invest-divider{ display:none; }
+  .invest-price{ width:100%; justify-content:space-between; }
+}
+
+/* ============ CONTATO ============ */
+.contact-cta h2{ font-size:clamp(28px,4vw,42px); margin-top:14px; max-width:14ch; }
+.contact-cta .lede{ margin-top:20px; max-width:44ch; }
+.contact-cta .phone-line{ margin-top:26px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+.contact-cta .phone-line span{ font-family:var(--serif); font-size:18px; color:var(--ink-dim); }
+
+/* ============ FORM ============ */
+.form-wrap{ margin-top:clamp(60px,8vw,96px); }
+.contact-form{ display:grid; grid-template-columns:1fr 1fr; gap:22px 28px; }
+.field{ display:flex; flex-direction:column; gap:8px; }
+.field.full{ grid-column:1/-1; }
+.field label{ font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--stone); }
+.field input, .field select, .field textarea{
+  background:transparent; border:none; border-bottom:1px solid var(--line); color:var(--ink);
+  font-family:var(--sans); font-size:15px; padding:12px 2px; transition:border-color .3s;
+}
+.field select{ appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23968f7e'%3E%3Cpath d='M5 8l5 5 5-5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 4px center; }
+.field select option{ background:var(--panel); color:var(--ink); }
+.field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--gold); }
+.field textarea{ resize:vertical; min-height:110px; }
+.form-foot{ grid-column:1/-1; display:flex; align-items:center; gap:18px; margin-top:6px; flex-wrap:wrap; }
+.form-note{ font-size:12px; color:var(--stone); }
+.form-msg{ font-size:13px; margin-top:14px; }
+.form-msg.success{ color:var(--gold); }
+.form-msg.error{ color:#d98c72; }
+.btn-submit{ position:relative; min-width:220px; justify-content:center; }
+.btn-submit .spinner{
+  display:none; width:14px; height:14px; border-radius:50%;
+  border:2px solid rgba(18,17,16,.25); border-top-color:var(--black); animation:spin .7s linear infinite;
+}
+.btn-submit.loading .spinner{ display:inline-block; }
+.btn-submit.loading .label{ opacity:.7; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+@media (max-width:700px){ .contact-form{ grid-template-columns:1fr; } }
+
+/* ============ FOOTER ============ */
+footer{ border-top:1px solid var(--line); padding:56px 0 max(28px, env(safe-area-inset-bottom)); }
+.foot-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:32px; flex-wrap:wrap; padding-bottom:36px; border-bottom:1px solid var(--line-soft); }
+.foot-brand{ display:flex; align-items:center; gap:10px; }
+.foot-brand img{ height:30px; width:auto; }
+.foot-brand span{ font-size:11px; letter-spacing:.24em; color:var(--stone); }
+.foot-nav{ display:flex; gap:28px; flex-wrap:wrap; }
+.foot-nav a{ font-size:12.5px; letter-spacing:.05em; color:var(--ink-dim); }
+.foot-nav a:hover{ color:var(--ink); }
+.foot-social{ display:flex; gap:14px; }
+.foot-social a{
+  width:38px; height:38px; border:1px solid var(--line); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; color:var(--ink-dim); transition:border-color .3s, color .3s;
+}
+.foot-social a:hover{ border-color:var(--gold); color:var(--gold); }
+.foot-social svg{ width:16px; height:16px; }
+.foot-bottom{ margin-top:24px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; color:var(--stone); font-size:11.5px; }
+
+/* ============ WHATSAPP FLOAT ============ */
+.wa-float{
+  position:fixed; right:max(20px, env(safe-area-inset-right)); bottom:max(20px, env(safe-area-inset-bottom));
+  z-index:90; width:56px; height:56px; border-radius:50%; background:#25D366; color:#0b0b0a;
+  display:flex; align-items:center; justify-content:center; box-shadow:0 10px 30px rgba(0,0,0,.4);
+  transition:transform .3s var(--ease);
+}
+.wa-float:hover{ transform:scale(1.06); }
+.wa-float svg{ width:26px; height:26px; }
+.wa-float .ring{
+  position:absolute; inset:0; border-radius:50%; border:2px solid #25D366; opacity:.6;
+  animation:wa-pulse 2.6s ease-out infinite;
+}
+@keyframes wa-pulse{ 0%{ transform:scale(1); opacity:.55; } 100%{ transform:scale(1.7); opacity:0; } }
+@media (prefers-reduced-motion:reduce){ .wa-float .ring{ animation:none; display:none; } }
+
+/* ============ REVEAL ============ */
+[data-r]{ opacity:0; transform:translateY(22px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+[data-r].in{ opacity:1; transform:none; }
+
+/* ============ SKIP LINK (a11y) ============ */
+.skip-link{
+  position:fixed; top:-100%; left:12px; z-index:200; background:var(--ink); color:var(--black);
+  padding:12px 18px; border-radius:8px; font-size:13px; transition:top .3s var(--ease);
+}
+.skip-link:focus{ top:12px; }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+<nav class="nav" id="nav" aria-label="Navegação principal">
+  <a class="brand" href="#top" aria-label="EM Studio — início">
+    <img src="assets/logo-mark.png" alt="" width="40" height="34">
+    <span class="brand-text"><b>EM</b><span>Studio</span></span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#top">Início</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#investimento">Investimento</a>
+    <a class="mob-cta btn btn-solid" href="#contato">Falar com a EM</a>
+  </div>
+  <a class="nav-cta btn btn-solid" href="#contato">Falar com a EM</a>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+</nav>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">EM Studio</span>
+      <h1>Sites que fazem sua marca ser percebida.</h1>
+      <p class="lede">Criação de sites profissionais, modernos e personalizados para empresas que querem uma presença digital à altura do seu negócio.</p>
+      <div class="hero-price">
+        <span class="label">A partir de</span>
+        <span class="amount"><b>R$700</b></span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#contato">Falar com a EM <span class="arrow">→</span></a>
+        <a class="btn btn-line" href="#projetos">Conhecer nossos projetos</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="frame">
+        <img src="assets/brand/devices.jpg" alt="Laptop e celular exibindo um site desenvolvido pela EM Studio, sobre uma mesa de mármore escuro" width="1400" height="787">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PROJETOS ============ -->
+<section id="projetos" class="section-pad divider" aria-labelledby="projetos-heading">
+  <div class="wrap">
+    <div class="section-head">
+      <div data-r>
+        <span class="eyebrow">Projetos demonstrativos</span>
+        <h2 id="projetos-heading">Conheça alguns projetos que já desenvolvemos.</h2>
+      </div>
+      <p class="lede" data-r><span class="rule"></span>Cada projeto é único, assim como o seu negócio.</p>
+    </div>
+
+    <div class="proj-grid" data-r>
+      <article class="proj-card">
+        <a class="shot" href="https://brasa-burger1.vercel.app/" target="_blank" rel="noopener" aria-label="Ver o site da Brasa Burger">
+          <img src="assets/projects/brasa-final.jpg" alt="Site demonstrativo para hamburgueria — Brasa Burger" loading="lazy" width="1200" height="507">
+        </a>
+        <div class="meta">
+          <span class="num">01 — Hamburgueria</span>
+          <h3>Brasa Burger</h3>
+          <p>Site para restaurante/hamburgueria com cardápio e pedidos online.</p>
+          <a class="visit" href="https://brasa-burger1.vercel.app/" target="_blank" rel="noopener">Visualizar projeto <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <a class="shot" href="https://eliastudio.vercel.app/" target="_blank" rel="noopener" aria-label="Ver o site da ÉLIA Estética Avançada">
+          <img src="assets/projects/elia-final.jpg" alt="Site demonstrativo para clínica de estética — ÉLIA Estética Avançada" loading="lazy" width="1200" height="544">
+        </a>
+        <div class="meta">
+          <span class="num">02 — Estética</span>
+          <h3>ÉLIA Estética Avançada</h3>
+          <p>Landing page premium para clínica de estética.</p>
+          <a class="visit" href="https://eliastudio.vercel.app/" target="_blank" rel="noopener">Visualizar projeto <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <a class="shot" href="https://kineses-fisioterapia.vercel.app/" target="_blank" rel="noopener" aria-label="Ver o site da Kinesis Fisioterapia">
+          <img src="assets/projects/kinesis-final.jpg" alt="Site demonstrativo para clínica de fisioterapia — Kinesis Fisioterapia" loading="lazy" width="1200" height="547">
+        </a>
+        <div class="meta">
+          <span class="num">03 — Fisioterapia</span>
+          <h3>Kinesis Fisioterapia</h3>
+          <p>Site institucional moderno para profissional/clínica de fisioterapia.</p>
+          <a class="visit" href="https://kineses-fisioterapia.vercel.app/" target="_blank" rel="noopener">Visualizar projeto <span class="arrow">→</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card">
+        <a class="shot" href="https://cerne-construtora.vercel.app/" target="_blank" rel="noopener" aria-label="Ver o site da Cerne Construtora">
+          <img src="assets/projects/cerne-final.jpg" alt="Site demonstrativo para empresa de construção civil — Cerne Construtora" loading="lazy" width="1200" height="507">
+        </a>
+        <div class="meta">
+          <span class="num">04 — Construção civil</span>
+          <h3>Cerne Construtora</h3>
+          <p>Site para empresa de construção, reformas e projetos.</p>
+          <a class="visit" href="https://cerne-construtora.vercel.app/" target="_blank" rel="noopener">Visualizar projeto <span class="arrow">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section id="sobre" class="section-pad divider" aria-labelledby="sobre-heading">
+  <div class="wrap split">
+    <div class="split-media" data-r>
+      <img src="assets/brand/agenda.jpg" alt="Agenda com a marca EM Studio sobre uma mesa de mármore escuro, ao lado de um café e uma caneta" loading="lazy" width="1024" height="1536">
+    </div>
+    <div class="split-copy" data-r>
+      <span class="eyebrow">Sobre a EM Studio</span>
+      <h2 id="sobre-heading">Mais que sites, criamos presença digital.</h2>
+      <p class="lede">A EM Studio é um estúdio especializado na <strong>criação de sites profissionais</strong>, com foco em design, performance e resultados. Aqui, cada projeto é desenvolvido de forma personalizada, com atenção aos detalhes e compromisso com o seu crescimento.</p>
+      <span class="closing">Seu negócio online, do seu jeito.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INVESTIMENTO ============ -->
+<section id="investimento" class="invest divider" aria-labelledby="invest-heading">
+  <div class="wrap">
+    <div data-r>
+      <span class="eyebrow">Investimento</span>
+      <h2 id="invest-heading">Seu site começa aqui.</h2>
+      <p class="lede">Criação de site profissional e personalizado.</p>
+    </div>
+    <div class="invest-price" data-r>
+      <div class="amount-block">
+        <span class="label">A partir de</span>
+        <div class="amount">R$<b>700</b></div>
+      </div>
+      <div class="invest-divider" aria-hidden="true"></div>
+      <a class="btn btn-solid" href="#contato">Quero criar meu site <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section id="contato" class="section-pad divider" aria-labelledby="contato-heading">
+  <div class="wrap split reverse">
+    <div class="split-media" data-r>
+      <img src="assets/brand/whatsapp-phone.jpg" alt="Celular exibindo tela de contato via WhatsApp da EM Studio, sobre mesa de mármore escuro" loading="lazy" width="1024" height="1536">
+    </div>
+    <div class="split-copy contact-cta" data-r>
+      <span class="eyebrow">Vamos conversar?</span>
+      <h2 id="contato-heading">Sua empresa merece mais do que uma página. Merece presença.</h2>
+      <p class="lede">Tire suas dúvidas, solicite um orçamento e vamos tirar o seu projeto do papel — direto pelo WhatsApp.</p>
+      <div class="phone-line">
+        <a class="btn btn-solid" href="https://wa.me/5521977383689?text=Ol%C3%A1!%20Vi%20o%20site%20da%20EM%20Studio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20projetos." target="_blank" rel="noopener">Fale comigo pelo WhatsApp <span class="arrow">→</span></a>
+        <span>(21) 97738-3689</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FORM ============ -->
+  <div class="wrap form-wrap" data-r>
+    <div class="section-head" style="margin-bottom:36px;">
+      <div>
+        <span class="eyebrow">Formulário de contato</span>
+        <h2 style="font-size:clamp(24px,2.8vw,32px);">Prefere escrever? Me conta sobre o seu projeto.</h2>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="f-nome">Nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="f-whats">WhatsApp</label>
+        <input id="f-whats" name="whatsapp" type="tel" autocomplete="tel" required>
+      </div>
+      <div class="field">
+        <label for="f-email">E-mail</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field">
+        <label for="f-tipo">Tipo de projeto</label>
+        <select id="f-tipo" name="tipo" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="institucional">Site institucional</option>
+          <option value="landing">Landing page</option>
+          <option value="loja">Site para negócio local</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="f-msg">Mensagem</label>
+        <textarea id="f-msg" name="mensagem" required></textarea>
+      </div>
+      <div class="form-foot">
+        <button type="submit" class="btn btn-solid btn-submit">
+          <span class="spinner" aria-hidden="true"></span>
+          <span class="label">Quero conversar sobre meu projeto</span>
+        </button>
+        <span class="form-note">Retorno em até 1 dia útil.</span>
+      </div>
+      <p class="form-msg full" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="foot-brand" href="#top" aria-label="EM Studio — início">
+        <img src="assets/logo-mark.png" alt="" width="35" height="30">
+        <span>EM Studio</span>
+      </a>
+      <nav class="foot-nav" aria-label="Navegação do rodapé">
+        <a href="#top">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#investimento">Investimento</a>
+      </nav>
+      <div class="foot-social">
+        <a href="https://wa.me/5521977383689" target="_blank" rel="noopener" aria-label="WhatsApp da EM Studio">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.1c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5 0 .5-.1 1.5-.6 1.7-1.2.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/em_studio__sites_premium" target="_blank" rel="noopener" aria-label="Instagram da EM Studio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.2"/><circle cx="16.6" cy="7.4" r=".6" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 EM Studio. Todos os direitos reservados.</span>
+      <span>Web Design &amp; Digital Experiences</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5521977383689?text=Ol%C3%A1!%20Vi%20o%20site%20da%20EM%20Studio%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20projetos." target="_blank" rel="noopener" aria-label="Falar com a EM Studio pelo WhatsApp">
+  <span class="ring" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.1c-1.6 0-3.1-.4-4.5-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.1 8.1 0 1 1 12 20.1Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.7.8-.8 1-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2 1 2.4c.1.2 1.6 2.5 4 3.5.6.2 1 .4 1.3.5.6.2 1.1.1 1.5 0 .5-.1 1.5-.6 1.7-1.2.2-.6.2-1 .1-1.1-.1-.1-.2-.2-.4-.3Z"/></svg>
+</a>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 10), { passive:true });
+
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  if (burger && navLinks) {
+    burger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      burger.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+  }
+
+  const els = document.querySelectorAll('[data-r]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold:.12 });
+    els.forEach(el => io.observe(el));
+    setTimeout(() => els.forEach(el => el.classList.add('in')), 2500);
+  } else {
+    els.forEach(el => el.classList.add('in'));
+  }
+
+  const form = document.getElementById('contactForm');
+  const msg = document.getElementById('formMsg');
+  const submitBtn = form ? form.querySelector('.btn-submit') : null;
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      submitBtn.classList.add('loading');
+      submitBtn.disabled = true;
+      msg.textContent = '';
+      msg.className = 'form-msg full';
+
+      const data = new FormData(form);
+      const tipoLabel = form.querySelector('#f-tipo').selectedOptions[0]?.textContent || '';
+      const texto =
+        `Olá! Vim pelo site da EM Studio e gostaria de conversar sobre um projeto.\n\n` +
+        `Nome: ${data.get('nome')}\n` +
+        `WhatsApp: ${data.get('whatsapp')}\n` +
+        `E-mail: ${data.get('email')}\n` +
+        `Tipo de projeto: ${tipoLabel}\n` +
+        `Mensagem: ${data.get('mensagem')}`;
+
+      const waLink = `https://wa.me/5521977383689?text=${encodeURIComponent(texto)}`;
+
+      setTimeout(() => {
+        submitBtn.classList.remove('loading');
+        submitBtn.disabled = false;
+        msg.textContent = 'Tudo certo! Abrindo o WhatsApp para você enviar sua mensagem à EM Studio.';
+        msg.classList.add('success');
+        window.open(waLink, '_blank', 'noopener');
+        form.reset();
+      }, 800);
+    });
+  }
+});
+</script>
+</body>
+</html>
